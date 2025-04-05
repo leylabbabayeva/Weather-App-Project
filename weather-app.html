@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather-app.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <select id="city-select">
+      <option value="London">London</option>
+      <option value="New York">New York</option>
+      <option value="Tokyo">Tokyo</option>
+      <option value="Berlin">Berlin</option>
+      <option value="Munchen">Munchen</option>
+      <option value="Azerbaijan">Azerbaijan</option>
+      <option value="Deggendorf">Deggendorf</option>
+    </select>
+
+    <div class="today">
+      <div id="date">6 April</div>
+      <div id="day">Sunday</div>
+      <img id="weather-icon" src="img/sunny.png" alt="weather icon" />
+      <div id="temperature">30°</div>
+    </div>
+
+    <div id="forecast" class="forecast-box">
+      <!-- Forecast will be loaded here -->
+    </div>
+  </div>
+
+  <script src="weather-app.js"></script>
+</body>
+</html>
